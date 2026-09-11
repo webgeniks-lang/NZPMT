@@ -1,0 +1,31 @@
+/* Custom Payload admin overrides for NZPMT */
+
+/* ── Make the Lexical content editor taller ───────────────────────── */
+.rich-text-lexical .editor-scroller {
+  min-height: 500px !important;
+}
+
+.rich-text-lexical .editor {
+  min-height: 480px !important;
+}
+
+.rich-text-lexical .ContentEditable__root {
+  min-height: 460px !important;
+  padding: 16px !important;
+}
+
+/* ── Always show the fixed toolbar (don't hide when unfocused) ─────── */
+.fixed-toolbar.fixed-toolbar--hide {
+  visibility: visible !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+}
+
+.fixed-toolbar {
+  flex-wrap: wrap !important;
+  min-height: 44px !important;
+  background: var(--theme-elevation-50) !important;
+  border: 1px solid var(--theme-elevation-150) !important;
+  border-radius: 4px 4px 0 0 !important;
+  padding: 4px 8px !important;
+}

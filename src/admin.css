@@ -1,0 +1,25 @@
+/* Lexical rich text editor — taller content area */
+.rich-text-lexical__wrap .editor-scroller {
+  min-height: 500px !important;
+}
+
+.rich-text-lexical__wrap .ContentEditable__root {
+  min-height: 460px !important;
+}
+
+.rich-text-lexical__wrap .editor {
+  min-height: 460px !important;
+}
+
+.rich-text-lexical__wrap .editor-container {
+  min-height: 500px !important;
+}
+
+/* Fixed toolbar — sticky at top of editor */
+.fixed-toolbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 20 !important;
+  background: var(--theme-elevation-50) !important;
+  border-bottom: 1px solid var(--theme-elevation-150) !important;
+}
