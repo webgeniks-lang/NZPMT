@@ -1,22 +1,20 @@
-const R2 = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev'
+const R2 = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || ''
 
 /**
- * Converts a /wp-content/uploads/... relative path or nzpmt domain URL
- * into the Cloudflare R2 public URL.
+ * Converts a /wp-content/uploads/... path to R2 URL in production,
+ * or keeps it as a relative path for local development.
  */
-export function r2Img(url: string | undefined | null): string {
-  if (!url) return ''
-  // Already an R2 URL
-  if (url.includes('r2.dev') || url.includes('r2.cloudflarestorage.com')) return url
-  // Strip known domains to get the path
-  const path = url
-    .replace(/https?:\/\/(www\.)?(nzpmt\.co\.nz|nzpmt\.org|news\.nzpmt\.org)/, '')
-  // If it's a /wp-content/ relative path, prepend R2
-  if (path.startsWith('/wp-content/uploads/')) {
-    return `${R2}${path.replace('/wp-content/uploads/', '/')}`
+export function wpImg(path: string | undefined | null): string {
+  if (!path) return ''
+  // Already absolute (R2 or external)
+  if (path.startsWith('http')) return path
+  // Local path — prefix with R2 in production, serve locally otherwise
+  if (R2 && path.startsWith('/wp-content/uploads/')) {
+    return `${R2}${path.replace('/wp-content/uploads', '')}`
   }
-  return url
+  return path
 }
 
-/** @deprecated use r2Img */
-export const localImg = r2Img
+/** @deprecated use wpImg */
+export const localImg = wpImg
+export const r2Img = wpImg

@@ -7,18 +7,18 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 const platforms = [
-  { name: 'Radio Spice', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner1-1.png', desc: 'Community Radio' },
-  { name: 'Kiwi TV', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner2.png', desc: 'Videography & Events' },
-  { name: 'Punjab to Aotearoa', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner3.png', desc: 'Migration & Settlement' },
-  { name: 'Virsa Academy', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner-4.png', desc: 'Arts & Culture' },
-  { name: 'NZ Punjabi Volunteers', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner5.png', desc: 'Helping Communities' },
+  { name: 'Radio Spice', img: '/wp-content/uploads/2025/04/banner1-1.png', desc: 'Community Radio' },
+  { name: 'Kiwi TV', img: '/wp-content/uploads/2025/04/banner2.png', desc: 'Videography & Events' },
+  { name: 'Punjab to Aotearoa', img: '/wp-content/uploads/2025/04/banner3.png', desc: 'Migration & Settlement' },
+  { name: 'Virsa Academy', img: '/wp-content/uploads/2025/04/banner-4.png', desc: 'Arts & Culture' },
+  { name: 'NZ Punjabi Volunteers', img: '/wp-content/uploads/2025/04/banner5.png', desc: 'Helping Communities' },
 ]
 
 const recentEvents = [
-  { title: 'NZ Painting Competition 2026', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2026/08/DSC09021.jpg', href: '/events-initiatives' },
-  { title: 'Sufi Mehfil 2026', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2026/08/0N6A9794-1024x683.jpg', href: '/events-initiatives' },
-  { title: 'Family Fun Day 2026', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2026/02/ku9R0gvA-1024x683.jpeg', href: '/events-initiatives' },
-  { title: 'Sufi Night 2025', img: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2026/01/537181725_1243841764450885_7792337148379712437_n-1024x683.jpg', href: '/events-initiatives' },
+  { title: 'NZ Painting Competition 2026', img: '/wp-content/uploads/2026/08/DSC09021.jpg', href: '/events-initiatives' },
+  { title: 'Sufi Mehfil 2026', img: '/wp-content/uploads/2026/08/0N6A9794-1024x683.jpg', href: '/events-initiatives' },
+  { title: 'Family Fun Day 2026', img: '/wp-content/uploads/2026/02/ku9R0gvA-1024x683.jpeg', href: '/events-initiatives' },
+  { title: 'Sufi Night 2025', img: '/wp-content/uploads/2026/01/537181725_1243841764450885_7792337148379712437_n-1024x683.jpg', href: '/events-initiatives' },
 ]
 
 export default async function HomePage() {
@@ -40,7 +40,7 @@ export default async function HomePage() {
           <div className="flex justify-center mb-4">
             <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden bg-white shadow-md border-2 border-transparent">
               <Image
-                src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/nzpmt-emblem-circle.png"
+                src="/wp-content/uploads/2025/04/nzpmt-emblem-circle.png"
                 alt="NZPMT Emblem"
                 fill
                 className="object-cover"
@@ -84,7 +84,7 @@ export default async function HomePage() {
             {/* Community photo */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/community-vision.png"
+                src="/wp-content/uploads/2025/04/community-vision.png"
                 alt="Working with the community"
                 width={800}
                 height={500}
@@ -139,7 +139,7 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="relative rounded-xl overflow-hidden shadow">
               <Image
-                src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/Untitled-design21.png"
+                src="/wp-content/uploads/2025/04/Untitled-design21.png"
                 alt="NZPMT Key Objectives — Broadcast, Recognize, Support, Awareness"
                 width={700}
                 height={780}
@@ -197,7 +197,7 @@ export default async function HomePage() {
       {/* ── Community Photo Banner ────────────────────────────────────── */}
       <section className="relative h-96 md:h-[520px] overflow-hidden">
         <Image
-          src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/WhatsApp-Image-2021-08-31-at-3.14.19-AM-1-1024x683.jpeg"
+          src="/wp-content/uploads/2025/04/WhatsApp-Image-2021-08-31-at-3.14.19-AM-1-1024x683.jpeg"
           alt="NZPMT community"
           fill
           className="object-cover object-top"

@@ -85,7 +85,7 @@ export default function RadioPlayer() {
         {/* Radio Spice logo circle */}
         <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white shrink-0 shadow-inner">
           <Image
-            src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner1-1.png"
+            src="/wp-content/uploads/2025/04/banner1-1.png"
             alt="Radio Spice"
             fill
             className="object-contain p-1.5"

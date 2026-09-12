@@ -6,7 +6,7 @@ export default function AdminLogo() {
       <div style={{ background: '#fff', borderRadius: '12px', padding: '10px 20px', boxShadow: '0 2px 8px rgba(0,0,0,0.15)' }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/radio.png"
+          src="/wp-content/uploads/2025/04/radio.png"
           alt="Radio Spice"
           style={{ width: '160px', height: 'auto', display: 'block' }}
         />

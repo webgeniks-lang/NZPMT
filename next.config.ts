@@ -1,8 +1,19 @@
 import { withPayload } from '@payloadcms/next/withPayload'
 import type { NextConfig } from 'next'
 
+const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || ''
+
 const nextConfig: NextConfig = {
   devIndicators: false,
+  async rewrites() {
+    if (!R2_URL) return []
+    return [
+      {
+        source: '/wp-content/uploads/:path*',
+        destination: `${R2_URL}/:path*`,
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'nzpmt.co.nz' },
