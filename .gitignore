@@ -28,8 +28,7 @@ next-env.d.ts
 # payload
 src/payload-types.ts
 
-# database
-*.db
+# database journals only (db file is committed for initial deploy)
 *.db-journal
 
 # uploads (media generated at runtime)
@@ -39,4 +38,5 @@ public/media/*
 # misc
 .DS_Store
 *.log
-public/wp-content/uploads/
+# wp-content images are committed for Railway deployment
+# public/wp-content/uploads/
