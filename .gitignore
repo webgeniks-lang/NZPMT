@@ -38,5 +38,5 @@ public/media/*
 # misc
 .DS_Store
 *.log
-# wp-content images are committed for Railway deployment
-# public/wp-content/uploads/
+# images served from Cloudflare R2
+public/wp-content/uploads/
