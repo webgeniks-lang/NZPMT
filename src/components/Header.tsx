@@ -45,7 +45,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-4">
             <div className="bg-white rounded-xl px-3 py-1.5 shadow-sm shrink-0">
               <Image
-                src="/wp-content/uploads/2025/04/radio.png"
+                src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/radio.png"
                 alt="Radio Spice"
                 width={130}
                 height={70}

@@ -52,10 +52,10 @@ export default function AboutTrustPage() {
       {/* Gallery photos from trust page */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
         {[
-          { src: '/wp-content/uploads/2025/04/2-1.jpg', alt: 'NZPMT event 1' },
-          { src: '/wp-content/uploads/2025/04/2-copy-scaled-1-1024x682.jpg', alt: 'NZPMT event 2' },
-          { src: '/wp-content/uploads/2025/04/3.jpg', alt: 'NZPMT event 3' },
-          { src: '/wp-content/uploads/2025/04/WhatsApp-Image-2021-08-31-at-3.22.35-AM-1-1024x768.jpeg', alt: 'Community gathering' },
+          { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/2-1.jpg', alt: 'NZPMT event 1' },
+          { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/2-copy-scaled-1-1024x682.jpg', alt: 'NZPMT event 2' },
+          { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/3.jpg', alt: 'NZPMT event 3' },
+          { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/WhatsApp-Image-2021-08-31-at-3.22.35-AM-1-1024x768.jpeg', alt: 'Community gathering' },
         ].map((img) => (
           <div key={img.src} className="relative h-32 rounded-lg overflow-hidden bg-slate-200">
             <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="25vw" />

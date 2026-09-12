@@ -42,7 +42,7 @@ export default function AppDownloadPopup() {
           <div className="flex items-center gap-3">
             <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white/20">
               <Image
-                src="/wp-content/uploads/2025/04/banner1-1.png"
+                src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/banner1-1.png"
                 alt="Radio Spice"
                 fill
                 className="object-contain p-1"

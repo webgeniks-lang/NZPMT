@@ -33,7 +33,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
         <div className="relative h-64 lg:h-80 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/wp-content/uploads/2025/04/WhatsApp-Image-2021-08-31-at-3.14.19-AM-1-1024x683.jpeg"
+            src="https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/WhatsApp-Image-2021-08-31-at-3.14.19-AM-1-1024x683.jpeg"
             alt="NZPMT community"
             fill
             className="object-cover"
@@ -108,12 +108,12 @@ export default function AboutPage() {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {[
-            { src: '/wp-content/uploads/2025/04/2-1.jpg', alt: 'NZPMT community event' },
-            { src: '/wp-content/uploads/2025/04/2-copy-scaled-1-1024x682.jpg', alt: 'Community gathering' },
-            { src: '/wp-content/uploads/2025/04/3.jpg', alt: 'Cultural event' },
-            { src: '/wp-content/uploads/2025/08/535017872_1240655508102844_7745444021083411544_n-1024x768.jpg', alt: 'Janmashtami 2025' },
-            { src: '/wp-content/uploads/2025/05/IMG_4636-1024x683.jpeg', alt: 'Radio Spice 16th Anniversary' },
-            { src: '/wp-content/uploads/2025/12/489630107_1132448142256915_2874668154625279216_n-1024x683.jpg', alt: 'Family Picnic 2025' },
+            { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/2-1.jpg', alt: 'NZPMT community event' },
+            { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/2-copy-scaled-1-1024x682.jpg', alt: 'Community gathering' },
+            { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/04/3.jpg', alt: 'Cultural event' },
+            { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/08/535017872_1240655508102844_7745444021083411544_n-1024x768.jpg', alt: 'Janmashtami 2025' },
+            { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/05/IMG_4636-1024x683.jpeg', alt: 'Radio Spice 16th Anniversary' },
+            { src: 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev/2025/12/489630107_1132448142256915_2874668154625279216_n-1024x683.jpg', alt: 'Family Picnic 2025' },
           ].map((img) => (
             <div key={img.src} className="relative h-40 rounded-lg overflow-hidden bg-slate-200">
               <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 50vw, 33vw" />
