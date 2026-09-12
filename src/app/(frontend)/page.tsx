@@ -38,12 +38,12 @@ export default async function HomePage() {
 
           {/* Emblem */}
           <div className="flex justify-center mb-4">
-            <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden bg-white shadow-md border-2 border-slate-100 flex items-center justify-center p-4">
+            <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden bg-white shadow-md border-2 border-slate-100">
               <Image
-                src="/wp-content/uploads/2025/04/radio.png"
-                alt="NZPMT Radio Spice"
+                src="/wp-content/uploads/2025/04/nzpmt-emblem-circle.png"
+                alt="NZPMT Emblem"
                 fill
-                className="object-contain p-4"
+                className="object-contain p-2"
                 sizes="(max-width: 768px) 192px, 240px"
                 priority
               />
