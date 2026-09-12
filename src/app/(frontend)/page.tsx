@@ -63,13 +63,13 @@ export default async function HomePage() {
           </div>
 
           {/* Platform logos */}
-          <div className="flex flex-nowrap justify-center gap-6 md:gap-10">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
             {platforms.map((p) => (
-              <div key={p.name} className="flex flex-col items-center gap-3 group">
-                <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden bg-white shadow-md group-hover:shadow-lg transition-shadow border-2 border-transparent group-hover:border-red-600">
-                  <Image src={p.img} alt={p.name} fill className="object-contain p-1" sizes="(max-width: 768px) 144px, 176px" />
+              <div key={p.name} className="flex flex-col items-center gap-2 group w-[28vw] max-w-[140px] md:w-44">
+                <div className="relative w-full aspect-square rounded-full overflow-hidden bg-white shadow-md group-hover:shadow-lg transition-shadow border-2 border-transparent group-hover:border-red-600">
+                  <Image src={p.img} alt={p.name} fill className="object-contain p-1" sizes="(max-width: 768px) 28vw, 176px" />
                 </div>
-                <span className="text-sm text-slate-600 font-medium text-center leading-tight max-w-[120px]">{p.name}</span>
+                <span className="text-xs md:text-sm text-slate-600 font-medium text-center leading-tight">{p.name}</span>
               </div>
             ))}
           </div>
