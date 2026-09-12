@@ -77,7 +77,7 @@ export default function AppDownloadPopup() {
             /* Mobile: direct download buttons */
             <div className="flex flex-col gap-3">
               <a
-                href="https://apps.apple.com/app/radio-spice"
+                href="https://apps.apple.com/nz/app/radio-spice-new-zealand/id6766202193"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="flex items-center justify-center gap-3 bg-black text-white rounded-xl px-5 py-3 font-semibold text-sm hover:bg-slate-800 transition-colors"
@@ -88,7 +88,7 @@ export default function AppDownloadPopup() {
                 Download on App Store
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=com.radiospice"
+                href="https://play.google.com/store/apps/details?id=com.nzealand.radioSpice"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="flex items-center justify-center gap-3 bg-emerald-600 text-white rounded-xl px-5 py-3 font-semibold text-sm hover:bg-emerald-700 transition-colors"
