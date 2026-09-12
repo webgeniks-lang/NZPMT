@@ -38,12 +38,12 @@ export default async function HomePage() {
 
           {/* Emblem */}
           <div className="flex justify-center mb-4">
-            <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden bg-white shadow-md border-2 border-transparent">
+            <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden bg-white shadow-md border-2 border-slate-100 flex items-center justify-center p-4">
               <Image
-                src="/wp-content/uploads/2025/04/nzpmt-emblem-circle.png"
-                alt="NZPMT Emblem"
+                src="/wp-content/uploads/2025/04/radio.png"
+                alt="NZPMT Radio Spice"
                 fill
-                className="object-cover"
+                className="object-contain p-4"
                 sizes="(max-width: 768px) 192px, 240px"
                 priority
               />
@@ -84,7 +84,7 @@ export default async function HomePage() {
             {/* Community photo */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/wp-content/uploads/2025/04/community-vision.png"
+                src="/wp-content/uploads/2025/04/community-large.jpeg"
                 alt="Working with the community"
                 width={800}
                 height={500}
