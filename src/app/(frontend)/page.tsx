@@ -43,16 +43,11 @@ export default async function HomePage() {
                 src="/wp-content/uploads/2025/04/nzpmt-emblem-circle.png"
                 alt="NZPMT Emblem"
                 fill
-                className="object-contain p-4"
+                className="object-contain p-2"
                 sizes="(max-width: 768px) 208px, 288px"
                 priority
               />
             </div>
-          </div>
-
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-red-800 text-white font-bold text-sm md:text-base px-8 py-2 rounded-full shadow-md mb-3">
-            NZ PUNJABI MULTI MEDIA TRUST
           </div>
 
           {/* Arrow */}
