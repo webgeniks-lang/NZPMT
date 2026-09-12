@@ -38,18 +38,15 @@ export default async function HomePage() {
 
           {/* Emblem */}
           <div className="flex justify-center mb-4">
-            {/* Outer dotted ring */}
-            <div className="rounded-full border-4 border-dashed border-slate-300 p-3">
-              <div className="relative w-52 h-52 md:w-72 md:h-72 rounded-full overflow-hidden bg-white shadow-lg">
-                <Image
-                  src="/wp-content/uploads/2025/04/nzpmt-emblem-circle.png"
-                  alt="NZPMT Emblem"
-                  fill
-                  className="object-contain p-2"
-                  sizes="(max-width: 768px) 208px, 288px"
-                  priority
-                />
-              </div>
+            <div className="relative w-52 h-52 md:w-72 md:h-72 rounded-full bg-white shadow-lg flex items-center justify-center overflow-hidden">
+              <Image
+                src="/wp-content/uploads/2025/04/nzpmt-emblem-circle.png"
+                alt="NZPMT Emblem"
+                fill
+                className="object-contain p-4"
+                sizes="(max-width: 768px) 208px, 288px"
+                priority
+              />
             </div>
           </div>
 
