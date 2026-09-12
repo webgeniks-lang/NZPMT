@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       { protocol: 'http', hostname: 'news.nzpmt.org' },
       { protocol: 'https', hostname: 'news.nzpmt.org' },
       { protocol: 'https', hostname: '**.myftpupload.com' },
+      { protocol: 'https', hostname: 'pub-95ed881ed6cd420d83a10facc6131c54.r2.dev' },
+      { protocol: 'https', hostname: '*.r2.cloudflarestorage.com' },
     ],
   },
 }

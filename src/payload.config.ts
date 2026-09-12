@@ -1,6 +1,7 @@
 import { buildConfig } from 'payload'
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { s3Storage } from '@payloadcms/storage-s3'
 import sharp from 'sharp'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -38,6 +39,25 @@ export default buildConfig({
     },
   },
   collections: [Posts, Categories, Events, Media, SidebarWidgets, Users],
+  plugins: [
+    s3Storage({
+      collections: {
+        media: {
+          generateFileURL: ({ filename }) =>
+            `${process.env.R2_PUBLIC_URL || 'https://pub-95ed881ed6cd420d83a10facc6131c54.r2.dev'}/${filename}`,
+        },
+      },
+      bucket: process.env.R2_BUCKET || 'nzpmt-media',
+      config: {
+        credentials: {
+          accessKeyId: process.env.R2_ACCESS_KEY_ID || '',
+          secretAccessKey: process.env.R2_SECRET_ACCESS_KEY || '',
+        },
+        region: 'auto',
+        endpoint: process.env.R2_ENDPOINT,
+      },
+    }),
+  ],
   db: sqliteAdapter({
     client: { url: 'file:./nzpmt.db' },
   }),
