@@ -12,7 +12,8 @@
     "start": "next start",
     "generate:importmap": "payload generate:importmap",
     "generate:types": "payload generate:types",
-    "seed": "npx tsx src/scripts/seed.ts"
+    "seed": "npx tsx src/scripts/seed.ts",
+    "import:new": "npx tsx src/scripts/import-new-posts.ts"
   },
   "dependencies": {
     "@payloadcms/db-sqlite": "^3.89.0",
